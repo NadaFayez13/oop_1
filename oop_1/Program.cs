@@ -22,12 +22,24 @@ namespace oop_1
     {
         static void Main(string[] args)
         {
-        Book book = new Book();
-            book.Title = "Science book";
-            book.Genre = Genre.Science;
-            Console.WriteLine($"Title: {book.Title}");
-            Console.WriteLine($"Genre: {book.Genre}");
+            //Book book = new Book();
+            //    book.Title = "Science book";
+            //    book.Genre = Genre.Science;
+            //    Console.WriteLine($"Title: {book.Title}");
+            //    Console.WriteLine($"Genre: {book.Genre}");
 
+            #region question 5
+            /*Using the Genre enum above, print the underlying int value Genre.Fiction,
+            Genre.NonFiction, and Genre.Science by casting each to int.*/
+            int fictionValue = (int)Genre.Fiction;
+            int nonFictionValue = (int)Genre.NonFiction;
+            int scienceValue = (int)Genre.Science;
+
+            Console.WriteLine($"Genre.Fiction: {fictionValue}");
+            Console.WriteLine($"Genre.NonFiction: {nonFictionValue}");
+            Console.WriteLine($"Genre.Science: {scienceValue}");
+
+            #endregion
         }
     }
 }
