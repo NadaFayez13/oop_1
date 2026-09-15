@@ -1,23 +1,24 @@
 ﻿using System.Drawing;
 
 namespace oop_1
-{ 
-    public enum Genre
-    {
-        Fiction,
-        NonFiction,
-        Science
-    }
-    public class Book
-    {
-        public string Title { get; set; }
-        public Genre Genre { get; set; }
-    }
+{
+    //public enum Genre
+    //{
+    //    Fiction,
+    //    NonFiction,
+    //    Science
+    //}
+    //public class Book
+    //{
+    //    public string Title { get; set; }
+    //    public Genre Genre { get; set; }
+    //}
 
     internal class Program
     {
         static void Main(string[] args)
         {
+            //sheet5
             #region question 4
             //Book book = new Book();
             //    book.Title = "Science book";
@@ -57,16 +58,26 @@ namespace oop_1
             #region question 8
             /*Given string genreText = "Mystery"; (not a valid Genre value), use
             Enum.TryParse() to attempt the conversion. Print "Unknown genre" if it fails.*/
-            string genreText = "Mystery";
-            if (Enum.TryParse(genreText, out Genre genre))
-            {
-                Console.WriteLine($"genre: {genre}");
-            }
-            else
-            {
-                Console.WriteLine("Unknown genre");
-            }
+            //string genreText = "Mystery";
+            //if (Enum.TryParse(genreText, out Genre genre))
+            //{
+            //    Console.WriteLine($"genre: {genre}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Unknown genre");
+            //}
             #endregion
+
+            //sheet6
+            //Part 01 : Theoretical Questions
+            #region question 1
+            //What happens when a DeliveryAddress variable is copied into another variable and the copy is modified?
+            /*Since DeliveryAddress is a struct (a value type), copying it to another variable creates an independent copy of the data on the stack.
+              Therefore, any changes made to the new variable will not affect the original one at all, 
+             as they point to two separate memory locations.*/
+            #endregion
+
         }
-}
+    }
 }
